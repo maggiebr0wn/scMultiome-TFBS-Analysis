@@ -15,7 +15,7 @@ Adapted to obtain gene coordinates from gencode.v41.annotation.gtf which can be 
 
 ### Requirements
 
-<img src="https://github.com/GibsonLab-GT/scMultiome-TFBS-Analysis/blob/main/circos_plot.jpg" align = right width = 500 height = 500>
+<img src="https://github.com/GibsonLab-GT/scMultiome-TFBS-Analysis/blob/main/circos_plot.jpg" align = right width = 525 height = 525>
 
 **python libraries:** argparse, h5py, io, numpy, os, pandas, sys
 
