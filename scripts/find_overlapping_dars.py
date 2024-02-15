@@ -23,14 +23,11 @@ def parse_my_args():
 # ============================================
 def get_dars(dars_df, gene, chr, start, stop):
     ## extract DARs in window for this gene
-    if start > 0:
+    if start >= 0:
         gene_dars = dars_df[(dars_df["seqnames"] == chr) & (dars_df["start"].astype(int) >= start) & (dars_df["end"].astype(int) <= stop)]
         return gene_dars
     else:
-        start = 0
-        ## extract DARs in window for this gene
-        gene_dars = dars_df[(dars_df["seqnames"] == chr) & (dars_df["start"].astype(int) >= start) & (dars_df["end"].astype(int) <= stop)]
-        return gene_dars
+        print("Error in start position, negative value.")
 
 # ============================================
 if __name__ == "__main__":
